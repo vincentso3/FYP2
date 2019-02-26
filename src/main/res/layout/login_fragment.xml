@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/LinearLayout02"
+    android:layout_width="match_parent"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:hint="Password"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/editText2"
+        android:layout_alignLeft="@id/editText2"
+        android:layout_marginBottom="20dp"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/failmassage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:textColor="@color/red"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/failmassage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Login" />
+
+    <TextView
+        android:id="@+id/createaAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:clickable="true"
+        android:textSize="18dp"
+        android:text="Create account" />
+
+
+
+</RelativeLayout>

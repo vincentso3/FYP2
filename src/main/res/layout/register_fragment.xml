@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusableInTouchMode="true"
+    android:id="@+id/LinearLayout02"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/rPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:hint="Password"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/passwordFail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rPassword"
+        android:textColor="@color/red"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/rCPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="Confrim password"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/CpasswordFail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rCPassword"
+        android:textColor="@color/red"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/rNickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/nicknameFail"
+        android:layout_alignLeft="@id/rPassword"
+        android:inputType="textPersonName"
+        android:hint="Nickname"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/nicknameFail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rPassword"
+        android:textColor="@color/red"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/rUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/usernameFail"
+        android:layout_alignLeft="@id/rNickname"
+        android:inputType="textPersonName"
+        android:hint="Username"
+        android:ems="10" />
+
+
+    <TextView
+        android:id="@+id/usernameFail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rNickname"
+        android:textColor="@color/red"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rCPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Register" />
+
+    <TextView
+        android:id="@+id/backToSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:text="Sign in instead"
+        android:textSize="18dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/register"
+        />
+
+
+
+</RelativeLayout>
